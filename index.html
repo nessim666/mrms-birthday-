@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7eee9"><title>For You — October 28</title>
+<style>
+:root{--paper:#fbf6f1;--rose:#ead1ce;--rose2:#c58f91;--wine:#68464d;--ink:#49383a;--muted:#907d7d;--line:#eadeda;--white:#fffdfa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}button,input,textarea{font:inherit}button{cursor:pointer}.shell{max-width:1120px;margin:auto;padding:22px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0 22px;border-bottom:1px solid var(--line)}.brand{font-size:20px;letter-spacing:.08em;color:var(--wine)}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button{border:0;background:transparent;color:var(--muted);padding:10px 12px;border-radius:30px;font:14px Arial,sans-serif}.nav button.active,.nav button:hover{background:#efe0dc;color:var(--wine)}main{min-height:75vh}.page{display:none;padding:46px 0 70px;animation:fade .35s ease}.page.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font:11px Arial,sans-serif;color:var(--rose2)}h1,h2,h3,p{font-weight:normal}h1{font-size:clamp(42px,8vw,78px);line-height:1.02;margin:14px 0;color:var(--wine)}h2{font-size:clamp(30px,5vw,46px);color:var(--wine);margin:8px 0 18px}h3{font-size:25px;color:var(--wine);margin:0 0 12px}.lead{font-size:20px;line-height:1.65;color:#806b6b;max-width:650px}.small{font:13px/1.6 Arial,sans-serif;color:var(--muted)}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;min-height:570px}.hero-card{background:#f0dfdb;padding:16px;transform:rotate(1.5deg);box-shadow:0 20px 55px #68464d18}.hero-card img{display:block;width:100%;height:390px;object-fit:cover;object-position:center 30%;filter:saturate(.88)}.photo-caption{text-align:center;padding:15px 5px 7px;font-style:italic;color:var(--wine);font-size:20px}.btn{border:1px solid var(--wine);background:var(--wine);color:white;border-radius:3px;padding:13px 22px;font:13px Arial,sans-serif;letter-spacing:.06em}.btn.secondary{background:transparent;color:var(--wine)}.btn:disabled{opacity:.4;cursor:not-allowed}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.section-head{margin-bottom:28px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.memory-card,.letter-card,.game-card{background:var(--white);border:1px solid var(--line);padding:18px}.memory-placeholder{height:210px;background:linear-gradient(145deg,#f0dfdb,#e9d8d2);display:grid;place-items:center;color:#967d7c;text-align:center;padding:20px;font-style:italic}.memory-card h3{font-size:21px;margin:14px 0 5px}.memory-card p{font:13px/1.5 Arial,sans-serif;color:var(--muted);margin:0}.game-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.game-tabs button{padding:12px 16px;border:1px solid var(--line);background:transparent;color:var(--wine);border-radius:3px}.game-tabs button.active{background:var(--wine);color:white}.panel{max-width:760px;background:var(--white);border:1px solid var(--line);padding:clamp(20px,4vw,38px);margin:0 auto}.question-count{font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--rose2)}.question{font-size:27px;line-height:1.4;color:var(--wine);margin:12px 0 22px}.choices{display:grid;gap:10px}.choice{width:100%;text-align:left;background:#fbf6f1;border:1px solid var(--line);padding:15px 16px;color:var(--ink);transition:.2s}.choice:hover{border-color:var(--rose2);background:#f6eae6}.feedback{margin:15px 0;padding:14px;background:#f5e8e4;color:var(--wine);line-height:1.5}.hidden{display:none!important}textarea{width:100%;min-height:145px;padding:14px;border:1px solid var(--line);background:#fffdfa;resize:vertical;color:var(--ink);line-height:1.6}textarea:focus{outline:1px solid var(--rose2)}.reveal{background:#f7ece8;border-left:3px solid var(--rose2);padding:20px;margin:18px 0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.75;font-size:15px}.reveal-title{font-style:italic;color:var(--wine);font-size:22px;margin-bottom:12px}.game-note{font:12px/1.6 Arial,sans-serif;color:var(--muted)}.progress{height:3px;background:#efe3df;margin:18px 0 25px}.progress span{display:block;height:100%;background:var(--rose2);width:25%;transition:width .3s}.friends-empty{text-align:center;padding:60px 25px;background:#f3e5e1;border:1px solid var(--line)}.friends-empty p{font-size:19px;line-height:1.6;color:#806b6b;max-width:480px;margin:15px auto}.footer{border-top:1px solid var(--line);padding:20px 0;color:var(--muted);font:11px Arial,sans-serif;display:flex;justify-content:space-between;gap:12px}.final-photo{display:block;width:min(100%,480px);max-height:520px;object-fit:cover;margin:22px auto;border:10px solid white;box-shadow:0 12px 35px #68464d20}.center{text-align:center}.tiny{font:11px Arial,sans-serif;color:var(--muted)}
+@media(max-width:720px){.shell{padding:15px}.topbar{align-items:flex-start;flex-direction:column}.nav{width:100%;display:grid;grid-template-columns:repeat(2,1fr)}.nav button{text-align:center;background:#fffaf7}.hero{grid-template-columns:1fr;gap:26px;padding-top:10px}.hero-card{max-width:420px;margin:auto}.hero-card img{height:340px}.grid{grid-template-columns:1fr}.page{padding:32px 0 50px}.footer{flex-direction:column}.question{font-size:23px}}
+
+/* Cinematic romantic atmosphere */
+body{background:#1d1518;isolation:isolate;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:linear-gradient(120deg,rgba(30,17,23,.78),rgba(81,43,55,.58),rgba(25,19,24,.80));pointer-events:none}
+body:after{content:"";position:fixed;inset:-30%;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 20% 25%,#d9a6ad30,transparent 35%),radial-gradient(ellipse at 78% 70%,#f0d6c51c,transparent 34%),linear-gradient(115deg,transparent 35%,#fff2 50%,transparent 65%);animation:ambient 18s ease-in-out infinite alternate}
+@keyframes slowDrift{0%{transform:scale(1.06) translate3d(-1%,0,0)}100%{transform:scale(1.17) translate3d(1%,-1%,0)}}
+@keyframes ambient{0%{transform:translate3d(-3%,1%,0) rotate(-5deg)}100%{transform:translate3d(3%,-2%,0) rotate(5deg)}}
+.shell{position:relative;max-width:1160px;margin:24px auto;padding:24px 30px;background:linear-gradient(145deg,rgba(255,250,247,.94),rgba(250,239,235,.88));border:1px solid #fff8;border-radius:18px;box-shadow:0 35px 100px #10080b88;backdrop-filter:blur(18px)}
+.topbar{position:relative}.brand{text-shadow:0 2px 14px #c58f9140}.nav button{transition:transform .35s,background .35s,box-shadow .35s}.nav button:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 8px 20px #68464d18}
+.page{perspective:1400px}.page.active{animation:pageEnter .85s cubic-bezier(.2,.8,.2,1)}
+@keyframes pageEnter{0%{opacity:0;transform:translateY(35px) rotateX(8deg) scale(.97);filter:blur(5px)}100%{opacity:1;transform:none;filter:blur(0)}}
+.hero-card,.memory-card,.panel,.letter-card{transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.hero-card{border:1px solid #fff9;border-radius:8px;box-shadow:0 30px 70px #68464d35;animation:floatCard 7s ease-in-out infinite}
+@keyframes floatCard{0%,100%{transform:rotate(1.5deg) translateY(0)}50%{transform:rotate(-.8deg) translateY(-12px)}}
+.hero-card img{border-radius:3px}.memory-card{border-radius:9px;box-shadow:0 12px 30px #68464d0c}.memory-card:hover{transform:translateY(-9px) rotateX(3deg) rotateY(-3deg);box-shadow:0 24px 45px #68464d20}
+.panel{border-radius:14px;box-shadow:0 25px 65px #68464d1c;transform:translateZ(0)}
+.question{animation:questionIn .65s cubic-bezier(.16,1,.3,1);transform-origin:left center;text-shadow:0 5px 25px #c58f9120}
+@keyframes questionIn{0%{opacity:0;transform:translateX(-20px) rotateY(-13deg) translateZ(-35px);filter:blur(4px)}100%{opacity:1;transform:none;filter:blur(0)}}
+.choice{border-radius:9px;transform:translateZ(0);transition:transform .35s,box-shadow .35s,border-color .35s,background .35s}.choice:hover{transform:translate3d(7px,-3px,18px) rotateX(2deg);box-shadow:0 12px 25px #68464d18}
+.btn{border-radius:7px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px #68464d30}.btn:active{transform:scale(.98)}
+.reveal{border-radius:0 10px 10px 0;box-shadow:0 15px 35px #68464d12;animation:revealIn .8s cubic-bezier(.2,.8,.2,1)}
+@keyframes revealIn{0%{opacity:0;transform:rotateY(-12deg) translateX(25px) scale(.97);transform-origin:left;filter:blur(3px)}100%{opacity:1;transform:none;filter:blur(0)}}
+.final-photo{border-radius:4px;animation:photoReveal 1.1s cubic-bezier(.16,1,.3,1);transform:rotate(-2deg);box-shadow:0 28px 65px #68464d35}
+@keyframes photoReveal{0%{opacity:0;transform:scale(.72) rotateY(35deg) rotateZ(-8deg);filter:blur(8px)}100%{opacity:1;transform:rotate(-2deg);filter:blur(0)}}
+.progress{border-radius:10px;overflow:hidden}.progress span{box-shadow:0 0 14px #c58f91aa}
+.eyebrow{letter-spacing:.25em}.friends-empty{border-radius:12px;box-shadow:inset 0 0 60px #fff6}
+/* Subtle floating light flecks, no icons or emoji */
+.ambient-dust{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}.ambient-dust i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.3;box-shadow:0 0 12px 3px #f4d5d5;animation:rise linear infinite}.ambient-dust i:nth-child(1){left:8%;top:95%;animation-duration:19s}.ambient-dust i:nth-child(2){left:28%;top:105%;animation-duration:24s;animation-delay:-7s}.ambient-dust i:nth-child(3){left:57%;top:100%;animation-duration:21s;animation-delay:-12s}.ambient-dust i:nth-child(4){left:83%;top:110%;animation-duration:26s;animation-delay:-4s}.ambient-dust i:nth-child(5){left:94%;top:100%;animation-duration:18s;animation-delay:-9s}@keyframes rise{to{transform:translateY(-120vh) translateX(35px);opacity:0}}
+@media(max-width:720px){.shell{margin:8px;padding:15px;border-radius:13px}.hero-card{animation:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* Full-screen YouTube ambience and clear answer feedback */
+#ambientVideo{position:fixed;inset:0;width:100vw;height:100vh;z-index:-4;pointer-events:none;overflow:hidden}
+#ambientVideo iframe{position:absolute;top:50%;left:50%;width: max(100vw,177.78vh);height:max(100vh,56.25vw);transform:translate(-50%,-50%);border:0;filter:saturate(.72) brightness(.62)}
+.choice.correct{background:linear-gradient(110deg,#e4f2e8,#f5fbf6);border:2px solid #4f9b70;color:#245b3d;box-shadow:0 0 0 4px #4f9b7020,0 15px 35px #245b3d22;animation:correctPop .55s cubic-bezier(.2,1.5,.4,1)}
+.choice.incorrect{background:linear-gradient(110deg,#f8e3e3,#fff7f5);border:2px solid #c46c72;color:#8b343c;animation:wrongShake .42s ease;box-shadow:0 0 0 4px #c46c7220}
+.choice:disabled{cursor:default;opacity:1}
+.answer-result{margin:16px 0;padding:16px 18px;border-radius:10px;animation:resultRise .55s ease both;font:14px/1.6 Arial,sans-serif}
+.answer-result.good{background:#e8f4eb;border:1px solid #9bc9a9;color:#245b3d}
+.answer-result.playful{background:#f8ece8;border:1px solid #dfb9b4;color:#78474b}
+@keyframes correctPop{0%{transform:scale(.96)}55%{transform:scale(1.035)}100%{transform:scale(1)}}
+@keyframes wrongShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}50%{transform:translateX(5px)}75%{transform:translateX(-3px)}}
+@keyframes resultRise{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){#ambientVideo{display:none}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.memory-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.gallery-card{padding:12px;overflow:hidden}
+.gallery-open{width:100%;padding:0;border:0;background:#f0dfdb;display:block;overflow:hidden}
+.gallery-open img{width:100%;height:285px;object-fit:cover;display:block;transition:transform .55s ease,filter .4s ease}
+.gallery-open:hover img{transform:scale(1.045);filter:saturate(1.08)}
+.gallery-card figcaption{padding:13px 4px 4px}
+.gallery-card h3{font-size:20px;margin:0 0 5px}
+.gallery-card p{margin:0}
+.memory-film{max-width:820px;margin:52px auto 12px;text-align:center}
+.memory-film video{display:block;width:100%;max-height:620px;margin:18px auto;background:#201719;border:10px solid #fffdfa;box-shadow:0 20px 50px #68464d22}
+.photo-viewer{position:fixed;inset:0;z-index:9999;background:#160f12ed;display:flex;align-items:center;justify-content:center;padding:5vw}
+.photo-viewer.hidden{display:none!important}
+.photo-viewer img{max-width:82vw;max-height:86vh;object-fit:contain;box-shadow:0 12px 50px #0008}
+.photo-viewer button{position:absolute;width:48px;height:48px;border:1px solid #ffffff66;border-radius:50%;background:#ffffff18;color:#fff;font:32px Georgia;cursor:pointer}
+.viewer-close{top:22px;right:22px}.viewer-prev{left:20px}.viewer-next{right:20px}
+@media(max-width:720px){.memory-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.gallery-card{padding:9px}.gallery-open img{height:220px}.photo-viewer img{max-width:90vw;max-height:78vh}.viewer-prev{left:8px}.viewer-next{right:8px}}
+@media(max-width:460px){.memory-gallery{grid-template-columns:1fr}.gallery-open img{height:auto;max-height:460px;object-fit:contain}}
+
+
+#ambientVideo{z-index:-4}
+#ambientVideo iframe{width:100%;height:100%;border:0;position:absolute;inset:0;transform:scale(1.18);pointer-events:none}
+.birthday-welcome{position:fixed;inset:0;z-index:10000;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,#21151a,#6b3f4b 55%,#21151a);color:#fff8f3;text-align:center;padding:24px}
+.birthday-welcome:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 20% 25%,#e8aebc55,transparent 30%),radial-gradient(circle at 80% 70%,#f3d4b555,transparent 28%);animation:welcomeGlow 12s ease-in-out infinite alternate}
+.welcome-shade{position:absolute;inset:0;background:linear-gradient(180deg,#160e1280,#26151a66 50%,#160e12a8);backdrop-filter:blur(1.5px)}
+.welcome-content{position:relative;max-width:720px;padding:40px 22px;animation:welcomeRise 1.1s ease both}
+.welcome-kicker,.welcome-hint{font:11px Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:#f0cbd0}
+.welcome-sparkle{font-size:30px;color:#f2d6c0;margin:25px 0 12px;animation:sparkle 3s ease-in-out infinite}
+.welcome-content h1{font-size:clamp(52px,10vw,100px);line-height:.98;color:#fff8f3;margin:10px 0 20px;text-shadow:0 8px 35px #12090b66}
+.welcome-content h1 em{font-weight:normal;color:#f0c1ca}
+.welcome-content p{font-size:clamp(16px,2.4vw,21px);line-height:1.7;color:#f8e8e6;max-width:510px;margin:0 auto 30px}
+.welcome-button{border:1px solid #f2d5ce;background:#f8e8e3;color:#68464d;padding:16px 27px;font:13px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;transition:transform .25s,background .25s;box-shadow:0 12px 40px #10080a55}
+.welcome-button:hover{transform:translateY(-3px);background:white}
+.welcome-button span{font-size:18px;margin-left:10px}
+.welcome-hint{margin-top:22px;font-size:9px;opacity:.8}
+@keyframes welcomeRise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes welcomeGlow{to{transform:translate(3%, -2%) scale(1.08)}}
+@keyframes sparkle{50%{transform:rotate(25deg) scale(1.18);opacity:.7}}
+@media(max-width:520px){.welcome-content{padding:25px 12px}.welcome-kicker{font-size:9px;letter-spacing:.18em}.welcome-content h1{font-size:clamp(48px,14vw,72px)}}
+
+.birthday-welcome.welcome-leaving{opacity:0;transition:opacity .6s ease;pointer-events:none}
+
+.friend-message-card{display:grid;grid-template-columns:minmax(220px,.9fr) 1.1fr;gap:clamp(22px,4vw,48px);align-items:center;max-width:900px;margin:25px auto 50px;padding:clamp(16px,3vw,28px);border:1px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(255,255,255,.07);box-shadow:0 18px 55px rgba(0,0,0,.16);backdrop-filter:blur(10px)}
+.friend-photo img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover;border-radius:15px}
+.friend-message-copy h3{font-size:clamp(28px,4vw,42px);margin:8px 0 18px}
+.friend-message-copy p{font-size:clamp(16px,2vw,19px);line-height:1.85;white-space:normal}
+@media(max-width:650px){.friend-message-card{grid-template-columns:1fr}.friend-photo img{max-height:480px;object-fit:cover}}
+
+</style></head>
+<body>
+<div id="birthdayWelcome" class="birthday-welcome">
+  <div class="welcome-shade"></div>
+  <div class="welcome-content">
+    <div class="welcome-kicker">A little surprise, made with love</div>
+    <div class="welcome-sparkle">✦</div>
+    <h1>Happy Birthday,<br><em>my girl.</em></h1>
+    <p>Today is all about you. I made this little world just for us.</p>
+    <button id="enterBirthday" class="welcome-button" type="button">Open your surprise <span>♡</span></button>
+    <div class="welcome-hint">Press play to begin</div>
+  </div>
+</div>
+<div id="ambientVideo" aria-hidden="true"><iframe id="loveVideo" src="about:blank" title="Birthday love video and music" allow="autoplay; encrypted-media; picture-in-picture" tabindex="-1"></iframe></div><div class="ambient-dust" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="shell">
+<header class="topbar"><div class="brand">A LITTLE WORLD FOR YOU</div><nav class="nav" aria-label="Main navigation"><button class="active" data-page="home">Home</button><button data-page="memories">Our Memories</button><button data-page="games">Our Games</button><button data-page="friends">Her Friends' Messages</button><button data-page="letter">My Letter</button></nav></header>
+<main>
+<section class="page active" id="home"><div class="hero"><div><div class="eyebrow">October 28 · A day for you</div><h1>For my<br>favorite person.</h1><p class="lead">A little place made from our memories, our stories, and all the moments that make us us. Even from far away, this is something we can share.</p><div class="actions"><button class="btn" data-go="memories">Open our memories</button><button class="btn secondary" data-go="games">Start the games</button><button class="btn secondary" data-go="letter">Read my letter</button></div></div><div class="hero-card"><img src="assets/nessim.jpg" alt="A photo of us together at sunset"><div class="photo-caption">A little piece of me, sent to you.</div></div></div></section>
+<section class="page" id="memories"><div class="section-head"><div class="eyebrow">The moments we keep</div><h2>Our Memories</h2><p class="lead">All our photos together, collected here — the silly moments, the beautiful days, and everything in between.</p><p class="small">31 photos · 1 video</p></div><div class="grid memory-gallery"><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-01.jpeg" aria-label="Open memory 1"><img loading="lazy" src="assets/gallery-01.jpeg" alt="Our memory 1"></button><figcaption><h3>Memory 01</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-02.jpeg" aria-label="Open memory 2"><img loading="lazy" src="assets/gallery-02.jpeg" alt="Our memory 2"></button><figcaption><h3>Memory 02</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-03.jpeg" aria-label="Open memory 3"><img loading="lazy" src="assets/gallery-03.jpeg" alt="Our memory 3"></button><figcaption><h3>Memory 03</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-04.jpeg" aria-label="Open memory 4"><img loading="lazy" src="assets/gallery-04.jpeg" alt="Our memory 4"></button><figcaption><h3>Memory 04</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-05.jpeg" aria-label="Open memory 5"><img loading="lazy" src="assets/gallery-05.jpeg" alt="Our memory 5"></button><figcaption><h3>Memory 05</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-06.jpeg" aria-label="Open memory 6"><img loading="lazy" src="assets/gallery-06.jpeg" alt="Our memory 6"></button><figcaption><h3>Memory 06</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-07.jpeg" aria-label="Open memory 7"><img loading="lazy" src="assets/gallery-07.jpeg" alt="Our memory 7"></button><figcaption><h3>Memory 07</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-08.jpeg" aria-label="Open memory 8"><img loading="lazy" src="assets/gallery-08.jpeg" alt="Our memory 8"></button><figcaption><h3>Memory 08</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-09.jpeg" aria-label="Open memory 9"><img loading="lazy" src="assets/gallery-09.jpeg" alt="Our memory 9"></button><figcaption><h3>Memory 09</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-10.jpeg" aria-label="Open memory 10"><img loading="lazy" src="assets/gallery-10.jpeg" alt="Our memory 10"></button><figcaption><h3>Memory 10</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-11.jpeg" aria-label="Open memory 11"><img loading="lazy" src="assets/gallery-11.jpeg" alt="Our memory 11"></button><figcaption><h3>Memory 11</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-12.jpeg" aria-label="Open memory 12"><img loading="lazy" src="assets/gallery-12.jpeg" alt="Our memory 12"></button><figcaption><h3>Memory 12</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-13.jpeg" aria-label="Open memory 13"><img loading="lazy" src="assets/gallery-13.jpeg" alt="Our memory 13"></button><figcaption><h3>Memory 13</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-14.jpeg" aria-label="Open memory 14"><img loading="lazy" src="assets/gallery-14.jpeg" alt="Our memory 14"></button><figcaption><h3>Memory 14</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-15.jpeg" aria-label="Open memory 15"><img loading="lazy" src="assets/gallery-15.jpeg" alt="Our memory 15"></button><figcaption><h3>Memory 15</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-16.jpeg" aria-label="Open memory 16"><img loading="lazy" src="assets/gallery-16.jpeg" alt="Our memory 16"></button><figcaption><h3>Memory 16</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-17.jpeg" aria-label="Open memory 17"><img loading="lazy" src="assets/gallery-17.jpeg" alt="Our memory 17"></button><figcaption><h3>Memory 17</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-18.jpeg" aria-label="Open memory 18"><img loading="lazy" src="assets/gallery-18.jpeg" alt="Our memory 18"></button><figcaption><h3>Memory 18</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-19.jpeg" aria-label="Open memory 19"><img loading="lazy" src="assets/gallery-19.jpeg" alt="Our memory 19"></button><figcaption><h3>Memory 19</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-20.jpeg" aria-label="Open memory 20"><img loading="lazy" src="assets/gallery-20.jpeg" alt="Our memory 20"></button><figcaption><h3>Memory 20</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-21.jpeg" aria-label="Open memory 21"><img loading="lazy" src="assets/gallery-21.jpeg" alt="Our memory 21"></button><figcaption><h3>Memory 21</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-22.jpeg" aria-label="Open memory 22"><img loading="lazy" src="assets/gallery-22.jpeg" alt="Our memory 22"></button><figcaption><h3>Memory 22</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-23.jpeg" aria-label="Open memory 23"><img loading="lazy" src="assets/gallery-23.jpeg" alt="Our memory 23"></button><figcaption><h3>Memory 23</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-24.jpeg" aria-label="Open memory 24"><img loading="lazy" src="assets/gallery-24.jpeg" alt="Our memory 24"></button><figcaption><h3>Memory 24</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-25.jpeg" aria-label="Open memory 25"><img loading="lazy" src="assets/gallery-25.jpeg" alt="Our memory 25"></button><figcaption><h3>Memory 25</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-26.jpeg" aria-label="Open memory 26"><img loading="lazy" src="assets/gallery-26.jpeg" alt="Our memory 26"></button><figcaption><h3>Memory 26</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-27.jpeg" aria-label="Open memory 27"><img loading="lazy" src="assets/gallery-27.jpeg" alt="Our memory 27"></button><figcaption><h3>Memory 27</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-28.jpeg" aria-label="Open memory 28"><img loading="lazy" src="assets/gallery-28.jpeg" alt="Our memory 28"></button><figcaption><h3>Memory 28</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-29.jpeg" aria-label="Open memory 29"><img loading="lazy" src="assets/gallery-29.jpeg" alt="Our memory 29"></button><figcaption><h3>Memory 29</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-30.jpeg" aria-label="Open memory 30"><img loading="lazy" src="assets/gallery-30.jpeg" alt="Our memory 30"></button><figcaption><h3>Memory 30</h3><p>A moment worth keeping.</p></figcaption></figure><figure class="memory-card gallery-card"><button class="gallery-open" type="button" data-full="assets/gallery-31.jpeg" aria-label="Open memory 31"><img loading="lazy" src="assets/gallery-31.jpeg" alt="Our memory 31"></button><figcaption><h3>Memory 31</h3><p>A moment worth keeping.</p></figcaption></figure></div><div class="memory-film"><div class="eyebrow">A moment in motion</div><h3>Our little video</h3><video controls playsinline preload="metadata" src="assets/our-memory-video.mp4"></video></div><div class="photo-viewer hidden" id="photoViewer" role="dialog" aria-modal="true" aria-label="Memory photo"><button class="viewer-close" type="button" aria-label="Close">×</button><button class="viewer-prev" type="button" aria-label="Previous photo">‹</button><img src="" alt="Selected memory"><button class="viewer-next" type="button" aria-label="Next photo">›</button></div></section><section class="page" id="games"><div class="section-head"><div class="eyebrow">A little fun, made for us</div><h2>Our Games</h2><p class="lead">Two little games. One is all about our memories; the other is just a playful way to find me.</p></div><div class="game-tabs"><button class="active" data-game="story">Game 1 · Our Story</button><button data-game="find">Game 2 · Find Nessim</button></div>
+<div id="storyGame" class="panel"><div class="question-count" id="storyCount">Question 1 of 4</div><div class="progress"><span id="storyProgress"></span></div><div id="storyStage"></div></div>
+<div id="findGame" class="panel hidden"><div id="findStage"></div></div></section>
+<section class="page" id="friends">
+<div class="section-head"><div class="eyebrow">From the people who love you</div><h2>Her Friends' Messages</h2><p class="lead">Little words from the people who are lucky to have you in their lives.</p></div>
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/lina-message.jpeg" alt="Lina and her friend together"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Lina ♡</h3>
+    <p>Joyeux anniversaire maa vieeee I’m so lucky to have you in my life, w twhchtkkkk ysrrrrrrr Thank you for making my life better just by being in it. Misss uuu Mara okhraaaa Je t’aime infiniment, ma goo ❤️❤️❤️❤️❤️❤️❤️😘😘😘😘😘😘😘</p>
+  </div>
+</div>
+
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/rawen-message.jpeg" alt="Rawen and Maram sharing a hug"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Rawen ♡</h3>
+    <p>Hi best friend,<br><br>
+    I'm not gonna start this letter by happy birthday or I love you so much or any of the stuff that any other letter starts with but instead khalini nahki 3le wahda men ahsen la3bed fi hyeti as if you're not that girl ya3ni. Back in school and mid school I barely had a one good friend or let me say never had someone I can lean on I was the one girl everyone makes fun of yet I always wanted to be friends with the people that hurt me the most at that time but then growing up I met one girl she was full of energy, empathy, love, chaos and she was full of memories. What memories? I met that one girl from kindergarten, Maram or lemme say Most Awesome Real And Magical. It was her again and even better we play sports together now it's as if god gave me another chance and said "here's your lost sister don't ever lose her again" and since then I never held into someone that much.<br><br>
+    Lemme end this story in here cause you know the rest but what you don't know is how much your presence in my life has affected me and made me a better girl. I became more confident in the way I talk, I look, the way I laugh and the way I express myself because you made sure to make me always comfortable and happy around you. I never really needed a boyfriend I got you and that's what matters to me.<br><br>
+    Promise I'll hold the hand that wiped my years too hard that even death can't distance is from each other.<br><br>
+    Promise I'll see you wearing a white dress but not any white dress the white dress they give you at the mentally unstable hospitals because you loved the wrong man.<br><br>
+    Promise I'll try to make you the happiest even when I'm the saddest.<br><br>
+    Promise I'll see you in the white dress but this time the one we dream of all our lives hopefully you'll marry the right one and there's one right answer: <strong>NESSIM.</strong><br><br>
+    I promise we'll grow old together, travel together, cry together and most importantly love and laugh together. Your kids will probably love me the most and I'll make sure my kids will love you the most too. I hope that you know if you have no one and no shoulder to lean on I'll always make a room for you (you know I got fans).<br><br>
+    I will love you forever Maram because you're a real one and there's no distance on earth that can separate us.<br><br>
+    And now I can say happy birthday I love you a lot okhti habibti and I really wish I was right there with you to celebrate this special day.<br><br>
+    Twahachtek akthrr meli tetsawer ❤️</p>
+  </div>
+</div>
+
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/yessmine-message.jpeg" alt="Yessmine and Maram in their volleyball uniforms"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Yessmine ♡</h3>
+    <p>Happy birthday to you dear mar’ 💕<br><br>
+    I want you to know that our friendship means so incredibly much to me and I hold it deeply in my heart.<br><br>
+    As long as I’m alive, you will always have someone that has your back.<br><br>
+    Despite the distance and life circumstances keeping us apart, I promise that I will always be there for you.<br><br>
+    You’ve helped me survive through the darkest times of my life and I am eternally grateful to you for that support (brsmi thank you so much for being there when I needed it most).<br><br>
+    You are incredibly special and precious to me and I hope we always continue to be friends 🫶🏻<br><br>
+    Wishing you endless joy and sincere love on this special day (w don’t forget to celebrate it as always!)<br><br>
+    Je t’aime barcha barcha Maram ❤️❤️</p>
+  </div>
+</div>
+
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/mariem-message.jpeg" alt="Mariem and Maram together in their volleyball uniforms"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Mariem ♡</h3>
+    <p>Happiest of birthdays Maramm 💞💞 💞<br><br>
+    From the bottom of my heart I wish you all the happiness and success in the world ❤️<br><br>
+    It was truly amazing getting to know you more and more this past year. I will always be grateful and deeply cherish all of our memories together as we grew closer. You really are one of the most genuine and loving people I’ve met, one that I consider a sister 🫶🏻<br><br>
+    I love you so much and I hope this next chapter into adulthood will bring you so much joy and laughter 😽<br><br>
+    (ps: never stop smiling ya divaa ❤️😘)</p>
+  </div>
+</div>
+
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/yosr-message.jpeg" alt="Yosr and Maram together"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Yosr ♡</h3>
+    <p>Hii maramm. I don’t know how to start or what even what to say but all I can think of is how much your presence in my life made it a thousand times better. You were first just my sister’s friend but then you became a sister to me. You took care of me when I had no one else. You treated me like a little sister. You made me feel loved. You made me feel like I belong wherever. Things have never been awkward with you. I could tell everything and anything and never regret it. You understand me the most, and no words could describe how grateful I am to have someone like you, someone to call a sister. I’m so thankful for you, for being able to text you now, for being able to hug you, to talk to you. You’re such a special human; you bring joy and comfort to every function. I just want you to keep shining in your own way. Lovee youuu more than ever, you’re little sis, Yosr ❤️</p>
+  </div>
+</div>
+
+<div class="friend-message-card" style="grid-template-columns:1fr;max-width:900px">
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Frh ♡</h3>
+    <p>Happy birthday to the purest soul I know. I love you so so so much bibiche I can’t put it into words and I wish you all the best in life. You’re my sister and my best friend and I absolutely adore and appreciate your presence in my life even if I don’t show it enough but just know that you mean a lot to me and that you make my life wayyy more enjoyable. Enjoy your 19s the fullest and just know that I love you and miss you soooo much 🥳😘😘</p>
+  </div>
+</div>
+
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/sarra-message.jpeg" alt="Sarra, Maram and their friend together at the beach"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Sarra ♡</h3>
+    <p>HAPPY BIRTHDAYYY MY BEAUTIFUL GIRL😍😍 you aree suchh a wonderful person im so gratefull for you maroumtii you deserve everything that makes you smileeeeee🥹❤️❤️❤️❤️❤️ I hope this new year brings you beautiful moments and makes all your dreams come true i really lovee you more than you knoww and i misss you so muchhhhhh bbg sendinggg youu the biggest hugggg❤️❤️❤️❤️❤️🫂🫂🫂🫂🫂🫂🫂</p>
+  </div>
+</div>
+
+<div class="friend-message-card" style="grid-template-columns:1fr;max-width:900px">
+  <div class="friend-message-copy">
+    <div class="eyebrow">A birthday wish from</div><h3>Emna ♡</h3>
+    <p>Dear Maram,<br><br>Happiest of birthdays to you. You are and will forever be someone i look up to. You’re one of the kindest and most generous souls I’ve known and I love how you light up every moment with your beautiful smile. I hope and Im sure life will bring you plenty of happiness, love and success. You deserve the best.<br><br>You are an immensely talented person. never stop believing in yourself. I love and miss you soo much and you’ll always have a special spot in my heart.<br><br>You’re also by far my favourite artist.<br><br>Love youu lotss, aminaa.</p>
+  </div>
+</div>
+<div class="friend-message-card">
+  <div class="friend-photo"><img src="assets/service-note.jpeg" alt="A mirror selfie memory"></div>
+  <div class="friend-message-copy">
+    <div class="eyebrow">A little note</div><h3>Mariem Service ♡</h3>
+    <p>nsit bch naaml copier ml snap w snap faskhoooooooooo</p>
+  </div>
+</div>
+</section>
+
+<section class="page" id="letter">
+  <div class="section-head center"><div class="eyebrow">From your gentleman</div><h2>A Letter From Nessim</h2><p class="lead" style="margin:0 auto">For my sunshine, my smile, my heart, my everything.</p></div>
+  <article class="panel" style="max-width:900px">
+    <div class="reveal-title">Mrm ❤️</div>
+    <div class="personal-letter" style="white-space:pre-wrap;line-height:1.95;font-size:16px;color:#60484d">Mrm
+So Naarch mnin bch nabda w win noufa w Chnewa nahki w Chnewa nkhali , so u know well how much I love u Naarch qaad manahkilk Njmch nosket u r my sunshine my smile my heart my everything ,it’s so real ki nqolk manjmch n3ich manghirk Naarch enti eli naaml maak jaw enti Eli awentni bch nqadem fi qrayti enti eli badeltli hyeti mlekher w I will never forget that w mostahil nhar nansa l hajet l bahya eli amelthomli w nhab nahki kifech enti kol anniversaire tkhalih special b ay faza taamlha w taarch tawa ay anniversaire hata kn mataamli chy bch yetaadeli special khtr enti maaya , habitk barcha qbal , w zedt habitk Akther meli rjaana maa baadhna it’s my fourth year liya c’est incroyable ça , pourquoi? C’est une seule meuf dans mes yeux c’est elle c’est ma vie c’est mon amour c’est my love my everything ,twhchtk barcha barchaaaaa w khalit blasa qaad l sakhta mais t’es toujours avec moi les appel les messages hata kan Kano khaybin it’s just existence taak ymathl kol chy w also dima nkhmm Eli just fatra hadhi lazma fi hyetna wla Manech bch nqadmo nchlh nwaliw maa baadhna dima Howa ahna maa baadhna dima mais yaani dima maaya w kol w ana nchof fih nhar Adheka khtr Andi dima thiqa ena bch nabqo maa baadhna w nchlh dima maa baadhna I love u so muchhhh my baby girl Nchlh fi décembre netqablo w bch nqolk honi eli ana khdhit les billets ama Maqolt lhad donc be tuned fl jemaatin hako naamlohom kol nchlhhh
+I love u so muchhh
+Ur gentleman nsm,</div>
+    <div class="center" style="margin-top:28px"><div class="eyebrow">Always yours</div><h3>Ur gentleman, Nsm ❤️</h3></div>
+    <figure style="margin:34px auto 4px;max-width:680px;text-align:center">
+      <img src="assets/nessim-letter-photo.jpeg" alt="A favorite photo together" style="display:block;width:100%;max-height:620px;object-fit:cover;border:10px solid white;box-shadow:0 12px 35px #68464d20;border-radius:4px">
+      <figcaption style="padding:14px 8px 4px;color:#806b6b;font-style:italic">One more memory I wanted to keep close. ❤️</figcaption>
+    </figure>
+  </article>
+</section>
+</main><footer class="footer"><span>Made with love, just for you.</span><span>October 28</span></footer></div>
+<script>
+const pages=[...document.querySelectorAll('.page')];function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'})}document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
+const memories=[
+{q:'Machyet Sousse, awel wahda alech bqina fi bit wahdna?',opts:['Khtrni ajebtk','Khtr fama chkon khalek tebki fl bit'],correct:1,ask:'Kifech kanet lik awel mara tebki qodemi?',para:'im sorry to ndhakrk b haja haka mais it was a wonderful memory of us naarch mn waqtha hasitk haka like bdit toqrobli w kol mn waqtha hasit eli ana lazem brasmi nabda fl rasmi yaani w adhika eli amlt ice Breaking entre nous it was a really good experience kifech waqtha la najemt naatik hug la chy just nahki maak bl klem w khw ltawa netdhaker kifech enti marmiya fl qa3a w ana fouq farch et aussi tansech eli enti waqtha jarebt dokhan qodemi flil hadha w ana naarch kifech khalitk lhaq makontch marbout bik yaani makontch najm nojbrk ala haja w haki haaja kayba win et voila w gtanya taak tayra waqtha w maamro maklit kifha baadha naarch khtr waqtha farhan wla naarch alech thats all'},
+{q:'Sekina eli qasit biha gâteau fi aid miladi fl pêcheur knt:',opts:['Hamra','Zarqa','Kahla'],correct:'all',ask:'Kifech kn awel anniversaire taamlholi w aleech habit taamlholi w kifech taada nhar adheka kn tetdhaker bazz?',para:'so nhar adeka taada adi yaser kima ay nhar fi romdhan mais brasmi ya hasra khtr qbal knt denya mahleha hasilo khrajt maa loled kima kol ada brasmi akther haja random haka ma3omri makont netwaqa3ha lhaq knt brasmi surprise tayra w kont lhaq manetsawerch mn had yaameli aid milad but u r with me idgaf about that hasilo mch kifi ana b3id alik tawa njmch nkhalilk nhark special but remember one random day in décembre will be special and more then special so taarech qadech nhab naanqek waqtha mais njmch taarch qadech habitk qadech araftk eli enti dima eli fi mokhi lhaq u r Always good with me qad manaamlk i love u so much w ala fekra adheka aid milad baad masohebna w tawa andna 3am w 9 ochhra qrib its 634 days yes fotna 500 days hasilo merci ala kol chy'},
+{q:'Chniya aban haja klitha fi aid miladek?',opts:['Brik swabe3 Fatma','Fondant','Pizza'],correct:'none',reveal:'Enti aban haja klitha',ask:'So its a special day but whats the thing eli qaad fi mokhk w akther haja tchofha toul ki yqololk anniversaire mrm 2025',para:'so at first 3am 3eme kn 3am tayer barcha lhaq maak najmt nqadem barcha fi qrayti mn waqtha w ana nqadem meli kont 13 moyen lin tqademt bl bahi shih fl bac majebtch eli habit alih mais hmdlh so our dates fl 3eme kano peaceful alekher lhaq mknch fama ghoul esmo bac yestana so know i have to talk for ur birthday wow i think is the best day of 2025 la tqoli aid miladi la chy brasmi nhar tayer hasit haka braha w kol hasit darkom mertaha zada amalna barcha jaw waqtha mais on négligé shamousa eli waqtha amal action hasilo naarch hasit haka rohi merteh alekher khtr awel mara dkhalt l darkom waqtha and when i give u the gift ur reaction its clearly mean eveything and the hug wowwww hasit rohi haka tayer and the kiss woww its the best kiss of 2025 yaani waqtha ki kona hachmin w kol hasilo its a wonderful w bch naawdoh nchlh and dw about that ur bf is nessim and i think he will take this like a sérieusement and that it i love u till my last breath my loveeeeeeeee'},
+{q:'So its my birthday again so chnewa l kedhba eli kdhebha aliya ysf ki tlabto?',opts:['Ana w Mehdi fl bhar','Nechwi fl djej ana w Mehdi fl dar','Naqra fl co ana w Mehdi'],correct:1,ask:'Why u r always keep that secret and keep it like a surprise',para:'oh that day in ramadan its a wonderful day like nhar adi fi romdhan like ay youm w netdhakerha nhar jel3a waqtha w ahna dakhlin fi 3otla je pense ana qolt hata kn bch yaamloli yaamloli nhar sebt hqsilo lhaq kont mtaleh yaser kifech machlaqtch and its a really nice idea w merci ala nhar adheka khtr brasmi ya3nili barcha kifech kolna malmomin like fi sahriyet romdhan and its like a wonderful nighht lhaq khtr kol chy kn bahy kol chy and enti zada mahlek w naarech nhar kn tayara al les activités eli amlnahom w ala kol chy en tt cas nhar yaser mahleh w nchlh naawdo netlamo akeka and thank u for every surprise my loveeeee'}];
+let qi=0,chosen=null,stage='choose';const storyStage=document.getElementById('storyStage');function renderStory(){document.getElementById('storyCount').textContent=qi<4?`Question ${qi+1} of 4`:'Our story';document.getElementById('storyProgress').style.width=(Math.min(qi+1,4)*25)+'%';if(qi>=4){storyStage.innerHTML=`<div class="center"><div class="eyebrow">You made it through our memories</div><h2>Our story is still going.</h2><p class="lead">And there are so many more moments waiting for us.</p><button class="btn" id="again">Play again</button></div>`;document.getElementById('again').onclick=()=>{qi=0;stage='choose';renderStory()};return}let m=memories[qi];if(stage==='choose'){storyStage.innerHTML=`<div class="question">${m.q}</div><div class="choices">${m.opts.map((o,i)=>`<button class="choice" data-choice="${i}">${i+1}. ${o}</button>`).join('')}</div><p class="game-note">Choose your answer. Then tell me what you remember.</p>`;storyStage.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>{chosen=Number(b.dataset.choice);const all=m.correct==='all',none=m.correct==='none',isRight=all||(none?false:chosen===m.correct);storyStage.querySelectorAll('[data-choice]').forEach(x=>{x.disabled=true;const ix=Number(x.dataset.choice);if((!none&&!all&&ix===m.correct)||all)x.classList.add('correct');if(ix===chosen&&!isRight)x.classList.add('incorrect')});const note=document.createElement('div');note.className='answer-result '+(isRight?'good':'playful');note.innerHTML=all?'Every option is correct. You win this one.':none?'Trick question. None of these is the real answer.':isRight?'Correct. You remembered this moment.':'Not this time. But the memory is what matters.';storyStage.appendChild(note);if(none){const reveal=document.createElement('div');reveal.className='answer-result good';reveal.textContent='The real answer: '+m.reveal+'.';storyStage.appendChild(reveal)}setTimeout(()=>{stage='write';renderStory()},1450)})}else if(stage==='write'){let result=m.correct==='all'?'All three answers are correct.':m.correct==='none'?'It was a trick question — none of the options was correct.':chosen===m.correct?'You remembered it.':'Not quite, but the memory is what matters.';let extra=m.reveal?`<div class="feedback">The real answer: <strong>${m.reveal}</strong>.</div>`:'';storyStage.innerHTML=`<div class="feedback">${result}</div>${extra}<div class="question">${m.ask}</div><p class="game-note">Write your memory in your own words. When you're ready, reveal mine.</p><textarea id="herAnswer" placeholder="Write your memory here..."></textarea><div class="actions"><button class="btn" id="reveal">Reveal his memory</button></div>`;document.getElementById('reveal').onclick=()=>{stage='reveal';renderStory()}}else{storyStage.innerHTML=`<div class="question">${m.ask}</div><p class="game-note">Your memory has been saved on this screen. Here is mine.</p><div class="reveal"><div class="reveal-title">My memory</div>${escapeHtml(m.para)}</div><div class="actions"><button class="btn" id="next">${qi===3?'Finish the game':'Next question'}</button></div>`;document.getElementById('next').onclick=()=>{qi++;stage='choose';chosen=null;renderStory()}}}function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}renderStory();
+// Second game: light, playful and romantic.
+document.querySelectorAll('[data-game]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-game]').forEach(x=>x.classList.toggle('active',x===b));document.getElementById('storyGame').classList.toggle('hidden',b.dataset.game!=='story');document.getElementById('findGame').classList.toggle('hidden',b.dataset.game!=='find')});
+const findQs=[{q:'Who misses the other one more?',opts:['Nessim','Obviously you'],right:0,wrong:'Nice try. You know I miss you.'},{q:'Where is my favorite place?',opts:['Next to you','At the beach','In my bed'],right:0,wrong:'Good place, but not my favorite one.'},{q:'What do I want most?',opts:['A new phone','To hug you again','Pizza'],right:1,wrong:'Not even close. You already know.'}];let fi=0;function renderFind(){let el=document.getElementById('findStage');if(fi>=findQs.length){el.innerHTML=`<div class="center"><div class="eyebrow">The last clue</div><h2>You found me.</h2><img class="final-photo" src="assets/nessim.jpg" alt="Nessim"><p class="lead" style="margin:10px auto">Even if we're far away, my heart is always next to yours.</p><h3>Happy birthday, my love.</h3><p class="small">A little piece of me, just for you.</p><button class="btn secondary" id="restartFind">Play again</button></div>`;document.getElementById('restartFind').onclick=()=>{fi=0;renderFind()};return}let q=findQs[fi];el.innerHTML=`<div class="question-count">Little clue ${fi+1} of ${findQs.length}</div><div class="progress"><span style="width:${(fi+1)/findQs.length*100}%"></span></div><div class="question">${q.q}</div><div class="choices">${q.opts.map((o,i)=>`<button class="choice" data-find="${i}">${o}</button>`).join('')}</div><div id="findFeedback"></div>`;el.querySelectorAll('[data-find]').forEach(b=>b.onclick=()=>{let n=Number(b.dataset.find),fb=document.getElementById('findFeedback');if(n===q.right){fb.innerHTML=`<div class="feedback">That's right. You know me well.</div><button class="btn" id="findNext">Continue</button>`;document.getElementById('findNext').onclick=()=>{fi++;renderFind()}}else{fb.innerHTML=`<div class="feedback">${q.wrong}</div>`}})}renderFind();
+// Gentle 3D tilt on desktop cards for a cinematic, tactile feel.
+if (window.matchMedia('(pointer:fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+ document.querySelectorAll('.hero-card,.panel,.memory-card').forEach(card=>{
+  card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(1100px) rotateX(${-y*4}deg) rotateY(${x*5}deg) translateY(-2px)`});
+  card.addEventListener('pointerleave',()=>{card.style.transform=''});
+ });
+}
+
+const galleryButtons=[...document.querySelectorAll('.gallery-open')];
+const photoViewer=document.getElementById('photoViewer');
+if(photoViewer&&galleryButtons.length){
+ const viewerImage=photoViewer.querySelector('img');let viewerIndex=0;
+ function showViewer(i){viewerIndex=(i+galleryButtons.length)%galleryButtons.length;viewerImage.src=galleryButtons[viewerIndex].dataset.full;photoViewer.classList.remove('hidden')}
+ galleryButtons.forEach((button,i)=>button.addEventListener('click',()=>showViewer(i)));
+ photoViewer.querySelector('.viewer-close').onclick=()=>photoViewer.classList.add('hidden');
+ photoViewer.querySelector('.viewer-prev').onclick=()=>showViewer(viewerIndex-1);
+ photoViewer.querySelector('.viewer-next').onclick=()=>showViewer(viewerIndex+1);
+ photoViewer.addEventListener('click',e=>{if(e.target===photoViewer)photoViewer.classList.add('hidden')});
+ document.addEventListener('keydown',e=>{if(photoViewer.classList.contains('hidden'))return;if(e.key==='Escape')photoViewer.classList.add('hidden');if(e.key==='ArrowLeft')showViewer(viewerIndex-1);if(e.key==='ArrowRight')showViewer(viewerIndex+1)});
+}
+
+
+const welcomeScreen=document.getElementById('birthdayWelcome');
+const enterBirthday=document.getElementById('enterBirthday');
+const loveVideo=document.getElementById('loveVideo');
+if(enterBirthday){
+ enterBirthday.addEventListener('click',()=>{
+   loveVideo.src='https://www.youtube.com/embed/pd6DgbvUqBc?autoplay=1&mute=0&controls=1&loop=1&playlist=pd6DgbvUqBc&playsinline=1&rel=0';
+   welcomeScreen.classList.add('welcome-leaving');
+   setTimeout(()=>welcomeScreen.remove(),650);
+ },{once:true});
+}
+
+</script></body></html>
